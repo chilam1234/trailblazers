@@ -1,0 +1,10 @@
+{
+  "ticker": "MSFT",
+  "name": "Microsoft Corporation",
+  "sector": "TMT",
+  "pod": "TMT",
+  "priority": "core",
+  "on_book": false,
+  "reason": "",
+  "aliases": ["Microsoft"]
+}

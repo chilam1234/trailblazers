@@ -1,0 +1,10 @@
+{
+  "ticker": "AAPL",
+  "name": "Apple Inc.",
+  "sector": "TMT",
+  "pod": "TMT",
+  "priority": "core",
+  "on_book": true,
+  "reason": "Seeded coverage.",
+  "aliases": ["Apple"]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "F-AAPL-10K",
+  "ticker": "AAPL",
+  "form": "10-K",
+  "filed": "2025-11-01",
+  "items": ["Item 1", "MD&A"],
+  "title": "Apple Inc. Form 10-K (synthetic)",
+  "text": "Services mix reached 24% of total net sales, up from 22% in the prior year, with advertising, cloud, and payment fees the fastest legs. Greater China net sales were 17% of the company total and declined 6% year over year on weaker iPhone unit demand and a stronger Services mix that did not fully offset hardware. iPhone remained 51% of net sales. The company stated that Greater China remains a material concentration and that regulatory and competitive intensity there can move quarterly hardware units more than Services."
+}

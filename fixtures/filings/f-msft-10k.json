@@ -1,0 +1,9 @@
+{
+  "id": "F-MSFT-10K",
+  "ticker": "MSFT",
+  "form": "10-K",
+  "filed": "2025-07-30",
+  "items": ["Item 1", "Item 1A", "MD&A"],
+  "title": "Microsoft Corporation Form 10-K (synthetic)",
+  "text": "Intelligent Cloud revenue grew 22% with Azure and other cloud services up 29%. Capital expenditure intensity rose: capex was 18% of revenue versus 14% a year earlier, driven by AI-optimized data-center build. OpenAI is not consolidated on the 10-K; the relationship is disclosed as a strategic partnership and investment, not a controlled subsidiary. Copilot appears as a Microsoft 365 and Azure consumption attach, not as a separately consolidated OpenAI line. Management warned that capex can stay elevated while Azure growth remains the primary payback."
+}

@@ -1,0 +1,25 @@
+services:
+  api:
+    image: python:3.12-slim
+    working_dir: /app/server
+    volumes:
+      - ./:/app
+    command: >
+      sh -c "pip install -q -e /app/server &&
+             uvicorn meridian.app:app --host 0.0.0.0 --port 8000"
+    ports:
+      - "8000:8000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+  web:
+    image: node:22-alpine
+    working_dir: /app/web
+    volumes:
+      - ./:/app
+    command: sh -c "npm install --no-fund --no-audit && npm run dev -- --hostname 0.0.0.0"
+    ports:
+      - "3000:3000"
+    environment:
+      MERIDIAN_API: http://api:8000
+    depends_on:
+      - api
