@@ -1,0 +1,167 @@
+[
+  {
+    "id": "R01",
+    "kind": "research",
+    "query": "What is NVIDIA's data-center mix and export-control risk?",
+    "must_cite": ["F-NVDA-10K"],
+    "must_contain": ["88%", "export-control"],
+    "hitl": false
+  },
+  {
+    "id": "R02",
+    "kind": "research",
+    "query": "Summarize Apple Services mix and Greater China from the latest 10-K.",
+    "must_cite": ["F-AAPL-10K"],
+    "must_contain": ["24%", "Greater China"],
+    "hitl": false
+  },
+  {
+    "id": "R03",
+    "kind": "research",
+    "query": "How does Microsoft Azure growth compare with capex intensity?",
+    "must_cite": ["F-MSFT-10K"],
+    "must_contain": ["29%", "18%"],
+    "hitl": false
+  },
+  {
+    "id": "R04",
+    "kind": "research",
+    "query": "Walk through JPMorgan NII peak-and-fade and CET1.",
+    "must_cite": ["F-JPM-10K"],
+    "must_contain": ["peak-and-fade", "15.1%"],
+    "hitl": false
+  },
+  {
+    "id": "R05",
+    "kind": "research",
+    "query": "What did Exxon disclose on Guyana volumes and the Pioneer integration?",
+    "must_cite": ["F-XOM-10K"],
+    "must_contain": ["640 kbd", "Pioneer"],
+    "hitl": false
+  },
+  {
+    "id": "R06",
+    "kind": "research",
+    "query": "Compare Apple Services mix versus NVIDIA data-center mix.",
+    "must_cite": ["F-AAPL-10K", "F-NVDA-10K"],
+    "must_contain": ["24%", "88%"],
+    "hitl": false
+  },
+  {
+    "id": "R07",
+    "kind": "research",
+    "query": "NVIDIA customer concentration among hyperscalers — how concentrated?",
+    "must_cite": ["F-NVDA-10K"],
+    "must_contain": ["Four customers", "10%"],
+    "hitl": false
+  },
+  {
+    "id": "R08",
+    "kind": "research",
+    "query": "What 8-K did Apple file on buybacks?",
+    "must_cite": ["F-AAPL-8K"],
+    "must_contain": ["$110 billion", "repurchase"],
+    "hitl": false
+  },
+  {
+    "id": "R09",
+    "kind": "research",
+    "query": "Is OpenAI consolidated on Microsoft's 10-K, and how does Copilot show up?",
+    "must_cite": ["F-MSFT-10K"],
+    "must_contain": ["not consolidated", "Copilot"],
+    "hitl": false
+  },
+  {
+    "id": "R10",
+    "kind": "research",
+    "query": "Exxon refining cracks versus the upstream volume stack.",
+    "must_cite": ["F-XOM-10K"],
+    "must_contain": ["34%", "upstream"],
+    "hitl": false
+  },
+  {
+    "id": "T11",
+    "kind": "research",
+    "query": "Pull the Apple 8-K on the incremental share repurchase authorization.",
+    "must_cite": ["F-AAPL-8K"],
+    "must_contain": ["incremental", "$110 billion"],
+    "hitl": false
+  },
+  {
+    "id": "T12",
+    "kind": "research",
+    "query": "Latest tape on NVIDIA export-control license denials.",
+    "must_cite": ["N-NVDA-EXPORT"],
+    "must_contain": ["license denials", "Blackwell"],
+    "hitl": false
+  },
+  {
+    "id": "R16",
+    "kind": "research",
+    "query": "What is Microsoft Intelligent Cloud growth and is OpenAI a consolidated subsidiary?",
+    "must_cite": ["F-MSFT-10K"],
+    "must_contain": ["22%", "not consolidated"],
+    "hitl": false
+  },
+  {
+    "id": "R17",
+    "kind": "research",
+    "query": "Apple iPhone mix versus Services mix in the latest 10-K.",
+    "must_cite": ["F-AAPL-10K"],
+    "must_contain": ["51%", "24%"],
+    "hitl": false
+  },
+  {
+    "id": "T18",
+    "kind": "research",
+    "query": "Latest tape on Exxon Guyana production and Pioneer synergies.",
+    "must_cite": ["N-XOM-GUYANA"],
+    "must_contain": ["640 kbd", "Pioneer"],
+    "hitl": false
+  },
+  {
+    "id": "H13",
+    "kind": "watchlist_add",
+    "query": "Add Exxon to the coverage watchlist.",
+    "must_cite": [],
+    "must_contain": ["XOM"],
+    "hitl": true,
+    "ticker": "XOM"
+  },
+  {
+    "id": "H14",
+    "kind": "watchlist_remove",
+    "query": "Remove Apple from the watchlist.",
+    "must_cite": [],
+    "must_contain": ["AAPL"],
+    "hitl": true,
+    "ticker": "AAPL"
+  },
+  {
+    "id": "H15",
+    "kind": "desk_note",
+    "query": "File a desk note: JPM NII peak-and-fade risk into the morning meeting.",
+    "must_cite": ["F-JPM-10K"],
+    "must_contain": ["NII", "CET1"],
+    "hitl": true,
+    "ticker": "JPM"
+  },
+  {
+    "id": "H19",
+    "kind": "watchlist_add",
+    "query": "Add Microsoft to the coverage watchlist.",
+    "must_cite": [],
+    "must_contain": ["MSFT"],
+    "hitl": true,
+    "ticker": "MSFT"
+  },
+  {
+    "id": "H20",
+    "kind": "desk_note",
+    "query": "File a desk note: NVDA export-control risk for the morning book.",
+    "must_cite": ["F-NVDA-10K"],
+    "must_contain": ["export-control", "88%"],
+    "hitl": true,
+    "ticker": "NVDA"
+  }
+]

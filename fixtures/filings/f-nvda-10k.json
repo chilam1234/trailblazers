@@ -1,0 +1,9 @@
+{
+  "id": "F-NVDA-10K",
+  "ticker": "NVDA",
+  "form": "10-K",
+  "filed": "2026-02-26",
+  "items": ["Item 1", "Item 1A", "MD&A"],
+  "title": "NVIDIA Corporation Form 10-K (synthetic)",
+  "text": "Data-center mix was 88% of total revenue. GAAP gross margin was 75%. Four customers, all hyperscalers or large-scale clouds, each accounted for more than 10% of revenue. China data-center revenue declined after export-control license denials on the most advanced Hopper and Blackwell accelerators; a lower-spec China SKU is disclosed and will not offset lost high-end mix. Customer concentration among hyperscalers is therefore high: four named buyers drive a double-digit share each. Hyperscaler demand outside China is absorbing wafers that would otherwise have shipped into the restricted SKU window."
+}

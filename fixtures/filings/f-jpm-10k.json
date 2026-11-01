@@ -1,0 +1,9 @@
+{
+  "id": "F-JPM-10K",
+  "ticker": "JPM",
+  "form": "10-K",
+  "filed": "2026-02-20",
+  "items": ["Item 1", "MD&A"],
+  "title": "JPMorgan Chase & Co. Form 10-K (synthetic)",
+  "text": "Net interest income peaked in the prior year and faded 7% as deposit costs caught the asset-yield book. Management described a peak-and-fade NII path: the 2024 high water was not repeated, and 2026 guidance assumes a further modest fade if the curve stays inverted in the front end. CET1 was 15.1% at year end, above the 13.6% standardized requirement plus buffers. The firm said the CET1 surplus is the capacity that funds the fade without cutting the payout."
+}

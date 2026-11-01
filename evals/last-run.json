@@ -1,0 +1,169 @@
+{
+  "gate": 0.92,
+  "mean": 1.0,
+  "cases": 20,
+  "p50_ms": 3.76,
+  "passed": true,
+  "results": [
+    {
+      "id": "R01",
+      "query": "What is NVIDIA's data-center mix and export-control risk?",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 8.301
+    },
+    {
+      "id": "R02",
+      "query": "Summarize Apple Services mix and Greater China from the latest 10-K.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 4.687
+    },
+    {
+      "id": "R03",
+      "query": "How does Microsoft Azure growth compare with capex intensity?",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.715
+    },
+    {
+      "id": "R04",
+      "query": "Walk through JPMorgan NII peak-and-fade and CET1.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.897
+    },
+    {
+      "id": "R05",
+      "query": "What did Exxon disclose on Guyana volumes and the Pioneer integration?",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.733
+    },
+    {
+      "id": "R06",
+      "query": "Compare Apple Services mix versus NVIDIA data-center mix.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.28
+    },
+    {
+      "id": "R07",
+      "query": "NVIDIA customer concentration among hyperscalers \u2014 how concentrated?",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.302
+    },
+    {
+      "id": "R08",
+      "query": "What 8-K did Apple file on buybacks?",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.566
+    },
+    {
+      "id": "R09",
+      "query": "Is OpenAI consolidated on Microsoft's 10-K, and how does Copilot show up?",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.597
+    },
+    {
+      "id": "R10",
+      "query": "Exxon refining cracks versus the upstream volume stack.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.787
+    },
+    {
+      "id": "T11",
+      "query": "Pull the Apple 8-K on the incremental share repurchase authorization.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.987
+    },
+    {
+      "id": "T12",
+      "query": "Latest tape on NVIDIA export-control license denials.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.181
+    },
+    {
+      "id": "R16",
+      "query": "What is Microsoft Intelligent Cloud growth and is OpenAI a consolidated subsidiary?",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.346
+    },
+    {
+      "id": "R17",
+      "query": "Apple iPhone mix versus Services mix in the latest 10-K.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.548
+    },
+    {
+      "id": "T18",
+      "query": "Latest tape on Exxon Guyana production and Pioneer synergies.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": false,
+      "elapsed_ms": 3.476
+    },
+    {
+      "id": "H13",
+      "query": "Add Exxon to the coverage watchlist.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": true,
+      "elapsed_ms": 4.162
+    },
+    {
+      "id": "H14",
+      "query": "Remove Apple from the watchlist.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": true,
+      "elapsed_ms": 4.054
+    },
+    {
+      "id": "H15",
+      "query": "File a desk note: JPM NII peak-and-fade risk into the morning meeting.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": true,
+      "elapsed_ms": 3.944
+    },
+    {
+      "id": "H19",
+      "query": "Add Microsoft to the coverage watchlist.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": true,
+      "elapsed_ms": 3.932
+    },
+    {
+      "id": "H20",
+      "query": "File a desk note: NVDA export-control risk for the morning book.",
+      "score": 1.0,
+      "misses": [],
+      "hitl": true,
+      "elapsed_ms": 4.059
+    }
+  ]
+}

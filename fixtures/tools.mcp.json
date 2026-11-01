@@ -1,0 +1,78 @@
+{
+  "name": "meridian",
+  "version": "0.4.0",
+  "description": "Meridian research desk tools. Fixture-backed; no live EDGAR.",
+  "tools": [
+    {
+      "name": "search_filings",
+      "description": "Retrieve synthetic 10-K / 8-K chunks for one or more tickers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "tickers": { "type": "array", "items": { "type": "string" } },
+          "form": { "type": "string", "enum": ["10-K", "8-K", "any"] }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "search_news",
+      "description": "Retrieve synthetic tape items for a query or ticker set.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "tickers": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "get_company",
+      "description": "Return the coverage card for a ticker.",
+      "inputSchema": {
+        "type": "object",
+        "properties": { "ticker": { "type": "string" } },
+        "required": ["ticker"]
+      }
+    },
+    {
+      "name": "watchlist_add",
+      "description": "Propose adding a name to the shared coverage book. Requires HITL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ticker": { "type": "string" },
+          "reason": { "type": "string" }
+        },
+        "required": ["ticker"]
+      }
+    },
+    {
+      "name": "watchlist_remove",
+      "description": "Propose removing a name from the shared coverage book. Requires HITL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ticker": { "type": "string" },
+          "reason": { "type": "string" }
+        },
+        "required": ["ticker"]
+      }
+    },
+    {
+      "name": "file_desk_note",
+      "description": "Propose a morning-book desk note. Requires HITL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ticker": { "type": "string" },
+          "title": { "type": "string" },
+          "body": { "type": "string" }
+        },
+        "required": ["ticker", "title", "body"]
+      }
+    }
+  ]
+}

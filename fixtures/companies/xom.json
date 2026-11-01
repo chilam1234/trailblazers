@@ -1,0 +1,10 @@
+{
+  "ticker": "XOM",
+  "name": "Exxon Mobil Corporation",
+  "sector": "Energy",
+  "pod": "Energy",
+  "priority": "core",
+  "on_book": false,
+  "reason": "",
+  "aliases": ["Exxon", "ExxonMobil", "Exxon Mobil"]
+}

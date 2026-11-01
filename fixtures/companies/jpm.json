@@ -1,0 +1,10 @@
+{
+  "ticker": "JPM",
+  "name": "JPMorgan Chase & Co.",
+  "sector": "Financials",
+  "pod": "FIG",
+  "priority": "core",
+  "on_book": false,
+  "reason": "",
+  "aliases": ["JPMorgan", "JPM", "JP Morgan"]
+}

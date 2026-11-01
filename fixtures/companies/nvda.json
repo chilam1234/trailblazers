@@ -1,0 +1,10 @@
+{
+  "ticker": "NVDA",
+  "name": "NVIDIA Corporation",
+  "sector": "TMT",
+  "pod": "TMT",
+  "priority": "core",
+  "on_book": true,
+  "reason": "Seeded coverage.",
+  "aliases": ["NVIDIA", "Nvidia"]
+}

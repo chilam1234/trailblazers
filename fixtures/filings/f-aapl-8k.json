@@ -1,0 +1,9 @@
+{
+  "id": "F-AAPL-8K",
+  "ticker": "AAPL",
+  "form": "8-K",
+  "filed": "2026-05-02",
+  "items": ["Item 2.02", "Item 8.01"],
+  "title": "Apple Inc. Form 8-K — incremental share repurchase (synthetic)",
+  "text": "The Board authorized an incremental $110 billion share repurchase program, in addition to the remaining capacity under the prior authorization. Management said the authorization is not a schedule: buybacks remain opportunistic against excess cash after dividends. No change to the quarterly dividend was disclosed in this 8-K. The incremental authorization is the largest single add in the fixture window."
+}
