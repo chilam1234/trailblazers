@@ -1,5 +1,5 @@
-from meridian.retrieve import jaccard, retrieve, token_set
-from meridian.tools import get_company, search_filings, search_news
+from trailblazers.retrieve import jaccard, retrieve, token_set
+from trailblazers.tools import get_company, search_filings, search_news
 
 
 def test_nvda_10k_is_top_filing() -> None:

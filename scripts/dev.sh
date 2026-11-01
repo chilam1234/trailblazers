@@ -12,13 +12,13 @@ if [[ ! -d "$ROOT/web/node_modules" ]]; then
 fi
 
 export PYTHONPATH="$ROOT/server"
-export MERIDIAN_API="${MERIDIAN_API:-http://127.0.0.1:8000}"
+export TRAILBLAZERS_API="${TRAILBLAZERS_API:-http://127.0.0.1:8000}"
 
-echo "Meridian API  → http://127.0.0.1:8000"
-echo "Meridian desk → http://127.0.0.1:3000"
+echo "Trailblazers API  → http://127.0.0.1:8000"
+echo "Trailblazers desk → http://127.0.0.1:3000"
 echo "Fixture composer is default unless OPENAI_API_KEY is set."
 
-"$ROOT/server/.venv/bin/uvicorn" meridian.app:app --app-dir "$ROOT/server" --host 0.0.0.0 --port 8000 &
+"$ROOT/server/.venv/bin/uvicorn" trailblazers.app:app --app-dir "$ROOT/server" --host 0.0.0.0 --port 8000 &
 API_PID=$!
 cleanup() { kill "$API_PID" 2>/dev/null || true; }
 trap cleanup EXIT INT TERM

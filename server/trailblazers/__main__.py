@@ -1,5 +1,5 @@
-from meridian.app import app
-from meridian.settings import settings
+from trailblazers.app import app
+from trailblazers.settings import settings
 
 if __name__ == "__main__":
     import uvicorn

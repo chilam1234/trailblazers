@@ -1,7 +1,7 @@
-from meridian.graph.graph import resume_graph, run_graph
-from meridian.graph.nodes import classify
-from meridian.schemas import WatchlistEntry
-from meridian.store import store
+from trailblazers.graph.graph import resume_graph, run_graph
+from trailblazers.graph.nodes import classify
+from trailblazers.schemas import WatchlistEntry
+from trailblazers.store import store
 
 
 def test_classify_intents() -> None:

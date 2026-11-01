@@ -1,5 +1,5 @@
-from meridian.compose import citations_from, fixture_compose, grounded
-from meridian.retrieve import retrieve
+from trailblazers.compose import citations_from, fixture_compose, grounded
+from trailblazers.retrieve import retrieve
 
 
 def test_fixture_composer_cites_nvda() -> None:

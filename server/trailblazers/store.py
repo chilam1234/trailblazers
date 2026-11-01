@@ -3,7 +3,7 @@ from __future__ import annotations
 import threading
 from typing import Any
 
-from meridian.schemas import DeskNote, WatchlistEntry
+from trailblazers.schemas import DeskNote, WatchlistEntry
 
 
 class DeskStore:

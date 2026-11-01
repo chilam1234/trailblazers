@@ -11,13 +11,13 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import SimpleSpanProcessor
 from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanExporter
 
-from meridian.store import store
+from trailblazers.store import store
 
 _exporter = InMemorySpanExporter()
-_provider = TracerProvider(resource=Resource.create({"service.name": "meridian"}))
+_provider = TracerProvider(resource=Resource.create({"service.name": "trailblazers"}))
 _provider.add_span_processor(SimpleSpanProcessor(_exporter))
 trace.set_tracer_provider(_provider)
-tracer = trace.get_tracer("meridian")
+tracer = trace.get_tracer("trailblazers")
 
 
 @contextmanager

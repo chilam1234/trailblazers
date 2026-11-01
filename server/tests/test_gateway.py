@@ -1,7 +1,7 @@
 import pytest
 from fastapi import HTTPException
 
-from meridian.gateway import ResponseCache, TokenBucket
+from trailblazers.gateway import ResponseCache, TokenBucket
 
 
 def test_token_bucket_allows_then_limits() -> None:

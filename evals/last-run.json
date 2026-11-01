@@ -2,7 +2,7 @@
   "gate": 0.92,
   "mean": 1.0,
   "cases": 20,
-  "p50_ms": 3.76,
+  "p50_ms": 3.448,
   "passed": true,
   "results": [
     {
@@ -11,7 +11,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 8.301
+      "elapsed_ms": 8.178
     },
     {
       "id": "R02",
@@ -19,7 +19,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 4.687
+      "elapsed_ms": 4.743
     },
     {
       "id": "R03",
@@ -27,7 +27,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.715
+      "elapsed_ms": 4.195
     },
     {
       "id": "R04",
@@ -35,7 +35,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.897
+      "elapsed_ms": 3.469
     },
     {
       "id": "R05",
@@ -43,7 +43,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.733
+      "elapsed_ms": 3.427
     },
     {
       "id": "R06",
@@ -51,7 +51,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.28
+      "elapsed_ms": 3.497
     },
     {
       "id": "R07",
@@ -59,7 +59,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.302
+      "elapsed_ms": 3.347
     },
     {
       "id": "R08",
@@ -67,7 +67,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.566
+      "elapsed_ms": 3.173
     },
     {
       "id": "R09",
@@ -75,7 +75,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.597
+      "elapsed_ms": 3.277
     },
     {
       "id": "R10",
@@ -83,7 +83,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.787
+      "elapsed_ms": 3.228
     },
     {
       "id": "T11",
@@ -91,7 +91,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.987
+      "elapsed_ms": 3.39
     },
     {
       "id": "T12",
@@ -99,7 +99,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.181
+      "elapsed_ms": 3.406
     },
     {
       "id": "R16",
@@ -107,7 +107,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.346
+      "elapsed_ms": 3.276
     },
     {
       "id": "R17",
@@ -115,7 +115,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.548
+      "elapsed_ms": 3.088
     },
     {
       "id": "T18",
@@ -123,7 +123,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": false,
-      "elapsed_ms": 3.476
+      "elapsed_ms": 3.325
     },
     {
       "id": "H13",
@@ -131,7 +131,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": true,
-      "elapsed_ms": 4.162
+      "elapsed_ms": 3.563
     },
     {
       "id": "H14",
@@ -139,7 +139,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": true,
-      "elapsed_ms": 4.054
+      "elapsed_ms": 3.767
     },
     {
       "id": "H15",
@@ -147,7 +147,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": true,
-      "elapsed_ms": 3.944
+      "elapsed_ms": 3.955
     },
     {
       "id": "H19",
@@ -155,7 +155,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": true,
-      "elapsed_ms": 3.932
+      "elapsed_ms": 3.723
     },
     {
       "id": "H20",
@@ -163,7 +163,7 @@
       "score": 1.0,
       "misses": [],
       "hitl": true,
-      "elapsed_ms": 4.059
+      "elapsed_ms": 3.649
     }
   ]
 }

@@ -13,11 +13,11 @@ fi
 
 export PYTHONPATH="$ROOT/server"
 echo "== ruff =="
-"$ROOT/server/.venv/bin/ruff" check "$ROOT/server/meridian" "$ROOT/server/tests"
+"$ROOT/server/.venv/bin/ruff" check "$ROOT/server/trailblazers" "$ROOT/server/tests"
 echo "== pytest =="
 "$ROOT/server/.venv/bin/pytest" -q "$ROOT/server/tests"
 echo "== evals =="
-"$ROOT/server/.venv/bin/python" -m meridian.evals
+"$ROOT/server/.venv/bin/python" -m trailblazers.evals
 echo "== web typecheck =="
 (cd "$ROOT/web" && npm run typecheck)
 echo "prove ok"

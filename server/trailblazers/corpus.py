@@ -4,8 +4,8 @@ import json
 from functools import lru_cache
 from pathlib import Path
 
-from meridian.schemas import Company, Document
-from meridian.settings import settings
+from trailblazers.schemas import Company, Document
+from trailblazers.settings import settings
 
 
 def _load_json(path: Path) -> dict:

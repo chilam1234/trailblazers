@@ -6,14 +6,14 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from meridian.corpus import load_companies
-from meridian.evals.runner import load_last_run, run_eval_suite
-from meridian.gateway import bucket, gateway_call
-from meridian.graph.graph import resume_graph, run_graph
-from meridian.observability import recent_otel_spans
-from meridian.schemas import HitlResumeRequest, ResearchRequest, WatchlistEntry
-from meridian.settings import settings
-from meridian.store import store
+from trailblazers.corpus import load_companies
+from trailblazers.evals.runner import load_last_run, run_eval_suite
+from trailblazers.gateway import bucket, gateway_call
+from trailblazers.graph.graph import resume_graph, run_graph
+from trailblazers.observability import recent_otel_spans
+from trailblazers.schemas import HitlResumeRequest, ResearchRequest, WatchlistEntry
+from trailblazers.settings import settings
+from trailblazers.store import store
 
 
 @asynccontextmanager
@@ -33,7 +33,7 @@ async def lifespan(_: FastAPI):
     yield
 
 
-app = FastAPI(title="Meridian Desk", version="0.4.0", lifespan=lifespan)
+app = FastAPI(title="Trailblazers", version="0.4.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origin_list or ["*"],

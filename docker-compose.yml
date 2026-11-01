@@ -6,7 +6,7 @@ services:
       - ./:/app
     command: >
       sh -c "pip install -q -e /app/server &&
-             uvicorn meridian.app:app --host 0.0.0.0 --port 8000"
+             uvicorn trailblazers.app:app --host 0.0.0.0 --port 8000"
     ports:
       - "8000:8000"
     environment:
@@ -20,6 +20,6 @@ services:
     ports:
       - "3000:3000"
     environment:
-      MERIDIAN_API: http://api:8000
+      TRAILBLAZERS_API: http://api:8000
     depends_on:
       - api
