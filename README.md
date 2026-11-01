@@ -1,10 +1,8 @@
-# Meridian Desk
+# Trailbalzers
 
-Public FDE apply showcase for **Bill Chan** — a filings + news + watchlist research desk.
+This repository is [github.com/chilam1234/trailblazers](https://github.com/chilam1234/trailblazers). 
 
-This repository is [github.com/chilam1234/trailblazers](https://github.com/chilam1234/trailblazers). The product inside is **Meridian Desk**.
-
-Meridian plans a question, retrieves synthetic 10-K / 8-K / tape chunks, drafts a cited briefing, and self-heals if the draft is ungrounded. Coverage writes (watchlist add/remove, morning-book desk notes) pause for human approval. A 20-case eval gate fails CI under a **0.92** mean.
+ plans a question, retrieves synthetic 10-K / 8-K / tape chunks, drafts a cited briefing, and self-heals if the draft is ungrounded. Coverage writes (watchlist add/remove, morning-book desk notes) pause for human approval. A 20-case eval gate fails CI under a **0.92** mean.
 
 No API key is required. When `OPENAI_API_KEY` is missing the **fixture composer** answers from the local corpus and the process does not crash. Fixtures are synthetic — not verbatim EDGAR. This slice has no WebGPU, no Rust, and no vLLM.
 
