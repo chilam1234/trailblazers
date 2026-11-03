@@ -3,8 +3,8 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from meridian.corpus import load_documents
-from meridian.schemas import Document
+from trailblazers.corpus import load_documents
+from trailblazers.schemas import Document
 
 _TOKEN = re.compile(r"[a-z0-9$%]+")
 _STOP = {

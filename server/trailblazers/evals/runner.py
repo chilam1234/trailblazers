@@ -5,11 +5,11 @@ import statistics
 import time
 from typing import Any
 
-from meridian.corpus import load_companies
-from meridian.graph.graph import run_graph
-from meridian.schemas import WatchlistEntry
-from meridian.settings import settings
-from meridian.store import store
+from trailblazers.corpus import load_companies
+from trailblazers.graph.graph import run_graph
+from trailblazers.schemas import WatchlistEntry
+from trailblazers.settings import settings
+from trailblazers.store import store
 
 
 def load_goldens() -> list[dict[str, Any]]:

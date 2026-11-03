@@ -3,8 +3,8 @@ from __future__ import annotations
 import json
 import sys
 
-from meridian.evals.runner import run_eval_suite
-from meridian.settings import settings
+from trailblazers.evals.runner import run_eval_suite
+from trailblazers.settings import settings
 
 
 def main() -> int:

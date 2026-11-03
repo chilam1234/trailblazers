@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from typing import Any
 
-from meridian.compose import (
+from trailblazers.compose import (
     citations_from,
     compose_briefing,
     desk_note_proposal,
@@ -11,11 +11,11 @@ from meridian.compose import (
     grounded,
     watchlist_proposal,
 )
-from meridian.corpus import company_alias_index, load_companies
-from meridian.graph.state import DeskState
-from meridian.observability import span
-from meridian.schemas import Document
-from meridian.tools import get_company, run_tools
+from trailblazers.corpus import company_alias_index, load_companies
+from trailblazers.graph.state import DeskState
+from trailblazers.observability import span
+from trailblazers.schemas import Document
+from trailblazers.tools import get_company, run_tools
 
 _WRITE_VERBS = (
     (r"\badd\b.+\bwatchlist\b", "watchlist_add"),
@@ -124,8 +124,8 @@ def self_heal_node(state: DeskState) -> dict[str, Any]:
 
 
 def apply_hitl_decision(state: DeskState) -> dict[str, Any]:
-    from meridian.schemas import DeskNote, WatchlistEntry
-    from meridian.store import store
+    from trailblazers.schemas import DeskNote, WatchlistEntry
+    from trailblazers.store import store
 
     decision = state.get("hitl_decision") or {}
     action = decision.get("action", "reject")

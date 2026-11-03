@@ -7,7 +7,7 @@ PY="${ROOT}/server/.venv/bin/python"
 if [[ ! -x "$PY" ]]; then PY="python3"; fi
 "$PY" - <<'PY'
 from fastapi.testclient import TestClient
-from meridian.app import app
+from trailblazers.app import app
 
 client = TestClient(app)
 health = client.get("/health")

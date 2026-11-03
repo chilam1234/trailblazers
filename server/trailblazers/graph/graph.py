@@ -7,16 +7,16 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command, interrupt
 
-from meridian.graph.nodes import (
+from trailblazers.graph.nodes import (
     apply_hitl_decision,
     draft_node,
     plan_node,
     retrieve_node,
     self_heal_node,
 )
-from meridian.graph.state import DeskState
-from meridian.observability import span
-from meridian.store import store
+from trailblazers.graph.state import DeskState
+from trailblazers.observability import span
+from trailblazers.store import store
 
 
 def _hitl_node(state: DeskState) -> dict[str, Any]:

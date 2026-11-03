@@ -1,8 +1,8 @@
-# Trailbalzers
+# Trailblazers
 
 This repository is [github.com/chilam1234/trailblazers](https://github.com/chilam1234/trailblazers). 
 
- plans a question, retrieves synthetic 10-K / 8-K / tape chunks, drafts a cited briefing, and self-heals if the draft is ungrounded. Coverage writes (watchlist add/remove, morning-book desk notes) pause for human approval. A 20-case eval gate fails CI under a **0.92** mean.
+Trailblazers plans a question, retrieves synthetic 10-K / 8-K / tape chunks, drafts a cited briefing, and self-heals if the draft is ungrounded. Coverage writes (watchlist add/remove, morning-book desk notes) pause for human approval. A 20-case eval gate fails CI under a **0.92** mean.
 
 No API key is required. When `OPENAI_API_KEY` is missing the **fixture composer** answers from the local corpus and the process does not crash. Fixtures are synthetic — not verbatim EDGAR. This slice has no WebGPU, no Rust, and no vLLM.
 
@@ -23,7 +23,7 @@ No API key is required. When `OPENAI_API_KEY` is missing the **fixture composer*
 cp .env.example .env          # OPENAI_API_KEY is optional
 ./scripts/dev.sh              # API :8000 + desk :3000
 ./scripts/smoke.sh            # health + one research call
-./scripts/eval.sh             # python -m meridian.evals
+./scripts/eval.sh             # python -m trailblazers.evals
 ./scripts/prove.sh            # ruff + pytest + evals + web typecheck
 ```
 
@@ -36,7 +36,7 @@ docker compose up --build
 ## Eval gate
 
 ```bash
-python -m meridian.evals      # from server/ with PYTHONPATH set, or use ./scripts/eval.sh
+python -m trailblazers.evals      # from server/ with PYTHONPATH set, or use ./scripts/eval.sh
 ./scripts/prove.sh
 ```
 
@@ -52,12 +52,12 @@ Last local run is written to `evals/last-run.json`.
 
 ```
 fixtures/   companies, filings, news, goldens, tools.mcp.json
-server/     FastAPI meridian package
-  meridian/app.py           HTTP
-  meridian/gateway.py       token bucket, exact+Jaccard cache, provider fallback
-  meridian/graph/           LangGraph plan → retrieve → draft → self-heal → HITL
-  meridian/compose.py       fixture composer (default) + optional OpenAI
-  meridian/evals/           20-case gate
+server/     FastAPI trailblazers package
+  trailblazers/app.py           HTTP
+  trailblazers/gateway.py       token bucket, exact+Jaccard cache, provider fallback
+  trailblazers/graph/           LangGraph plan → retrieve → draft → self-heal → HITL
+  trailblazers/compose.py       fixture composer (default) + optional OpenAI
+  trailblazers/evals/           20-case gate
 web/        Next.js desk — citations, HITL, eval board, traces, watchlist
 scripts/    dev.sh, prove.sh, smoke.sh, eval.sh
 ```
@@ -67,9 +67,9 @@ scripts/    dev.sh, prove.sh, smoke.sh, eval.sh
 | Piece | Where | Reuse |
 |-------|--------|--------|
 | MCP tools | `fixtures/tools.mcp.json` | `search_filings`, `search_news`, `get_company`, watchlist + desk-note writes |
-| Eval suite | `python -m meridian.evals` | 20 goldens, 0.92 mean, HITL polarity checks |
+| Eval suite | `python -m trailblazers.evals` | 20 goldens, 0.92 mean, HITL polarity checks |
 | Trace format | `GET /api/traces` | `{name, elapsed_ms, attrs}` plus OpenTelemetry in-process spans |
-| Gateway | `meridian/gateway.py` | token bucket, exact cache, Jaccard-near cache, OpenAI → fixture fallback |
+| Gateway | `trailblazers/gateway.py` | token bucket, exact cache, Jaccard-near cache, OpenAI → fixture fallback |
 | HITL | LangGraph `interrupt()` | approve / edit / reject on coverage writes only |
 
 ## Latency notes

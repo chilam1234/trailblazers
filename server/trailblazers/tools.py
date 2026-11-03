@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from typing import Any
 
-from meridian.corpus import load_companies
-from meridian.retrieve import retrieve
-from meridian.schemas import Document
+from trailblazers.corpus import load_companies
+from trailblazers.retrieve import retrieve
+from trailblazers.schemas import Document
 
 
 def search_filings(query: str, tickers: list[str] | None = None, form: str = "any") -> list[Document]:

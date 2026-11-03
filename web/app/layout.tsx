@@ -3,7 +3,7 @@ import "./globals.css";
 import { Shell } from "./shell";
 
 export const metadata: Metadata = {
-  title: "Meridian Desk",
+  title: "Trailblazers Desk",
   description: "Filings + news + watchlist research desk",
 };
 
