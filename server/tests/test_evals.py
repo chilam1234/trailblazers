@@ -1,5 +1,5 @@
-from meridian.evals.runner import load_goldens, run_eval_suite
-from meridian.settings import settings
+from trailblazers.evals.runner import load_goldens, run_eval_suite
+from trailblazers.settings import settings
 
 
 def test_twenty_goldens() -> None:

@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 
-from meridian.app import app
+from trailblazers.app import app
 
 
 def test_health_and_research_roundtrip() -> None:

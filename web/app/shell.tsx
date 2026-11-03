@@ -23,7 +23,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
   return (
     <div className="shell">
       <header className="topbar">
-        <div className="brand">MERIDIAN RESEARCH DESK</div>
+        <div className="brand">TRAILBLAZERS RESEARCH DESK</div>
         <nav className="nav">
           {LINKS.map((link) => (
             <Link key={link.href} href={link.href} className={path === link.href ? "active" : ""}>

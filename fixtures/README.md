@@ -1,4 +1,4 @@
-# Meridian fixture spine
+# Trailblazers fixture spine
 
 Synthetic coverage universe for the research desk. **Not verbatim EDGAR.**
 Numbers, item headings, and tape copy are invented so the composer, retrieval,

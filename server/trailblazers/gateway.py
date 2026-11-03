@@ -6,10 +6,10 @@ from typing import Any, Callable
 
 from fastapi import HTTPException
 
-from meridian.observability import span
-from meridian.retrieve import jaccard, token_set
-from meridian.settings import settings
-from meridian.store import store
+from trailblazers.observability import span
+from trailblazers.retrieve import jaccard, token_set
+from trailblazers.settings import settings
+from trailblazers.store import store
 
 
 class TokenBucket:

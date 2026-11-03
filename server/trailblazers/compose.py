@@ -5,8 +5,8 @@ from typing import Any
 
 import httpx
 
-from meridian.schemas import Citation, Document
-from meridian.settings import settings
+from trailblazers.schemas import Citation, Document
+from trailblazers.settings import settings
 
 
 def _excerpt(text: str, limit: int = 280) -> str:
@@ -62,7 +62,7 @@ def fixture_compose(question: str, tickers: list[str], docs: list[Document]) -> 
     news_lines = [f"- {doc.title} ({doc.filed}) [{doc.id}]: {_excerpt(doc.text, 240)}" for doc in news]
     news_block = "\n".join(news_lines) if news_lines else "- No tape items retrieved."
     return (
-        "MERIDIAN DESK BRIEFING\n\n"
+        "TRAILBLAZERS DESK BRIEFING\n\n"
         f"Coverage: {coverage}\n"
         f"Question: {question}\n\n"
         "BOTTOM LINE\n"
@@ -82,7 +82,7 @@ def openai_compose(question: str, docs: list[Document]) -> str:
             {
                 "role": "system",
                 "content": (
-                    "You are Meridian, an investment research desk. Answer only from the "
+                    "You are Trailblazers, an investment research desk. Answer only from the "
                     "provided fixture excerpts. Cite source ids like [F-NVDA-10K]. "
                     "Use BOTTOM LINE then FILING READ-THROUGH."
                 ),
